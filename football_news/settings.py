@@ -33,7 +33,7 @@ DEBUG = True
 PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "muhammad-alfa41-footballnews.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ['muhammad-alfa41-football-news.pbp.cs.ui.ac.id', 'localhost', '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = [
     "https://muhammad-alfa41-footballnews.pbp.cs.ui.ac.id/"
 ]
@@ -148,8 +148,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
